@@ -1,0 +1,39 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package testjava;
+import java.util.*;
+/**
+ *
+ * @author Hollow
+ */
+public class TestJava {
+
+    /**
+     * @param args the command line arguments
+     */
+    //ZADANIE 1
+    public static void main(String[] args) {
+        String newLine = System.lineSeparator();    //newLine macro
+        String variable;                            //Variable to input test
+        
+            
+        Scanner scn = new Scanner(System.in);       //class for reading line
+        variable = scn.next();                      //scanning console input
+        
+        int counter = 1;
+        for(String x:args)                          //fore each loop (x variable over args collection)
+        {
+            System.out.print(counter++ + ": " + x);                    //printing elements of args collection
+            System.out.print(newLine);
+        }
+        System.out.print(newLine);
+        
+        System.out.print("Variable: " + variable);                 //printing varaible written by scn
+        System.out.print(newLine);                  
+
+    }
+    
+}
